@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Petrus Graph 1</title>
+        <title>Overview of Cashflow</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../theme/Wikus/WikusTheme.css" />
         <link rel="stylesheet" href="../theme/Wikus/jquery.mobile.structure-1.1.0.min.css" />
@@ -99,6 +99,7 @@
                 },
                 {
                   label:'Minimum',
+                  color: '#FF0000',
                   rendererOptions: {
                     animation: {
                       speed: 2000
@@ -106,7 +107,8 @@
                   }  
                 },
                 {
-                  label:'Cash Flow (Linear)',
+                  label:'Linear',
+                  color: '#00FFFF',
                   rendererOptions: {
                     animation: {
                       speed: 2000
@@ -161,6 +163,14 @@
             });
             
           });
+        </script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("table.jqplot-table-legend").attr({ 
+                    style: "left: -20px; top: 220px; "
+                });
+            });
         </script>
         
         <!-- Don't touch this! -->
